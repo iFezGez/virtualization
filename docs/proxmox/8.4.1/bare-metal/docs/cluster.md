@@ -34,7 +34,7 @@ rm -rf /etc/corosync/* /var/lib/pve-cluster/*
 systemctl start pve-cluster
 ```
 
-![Proxmox Cluster Nodes](/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-cluster-nodes.png)
+![Proxmox Cluster Nodes](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-cluster-nodes.png)
 
 
 ---
@@ -67,7 +67,7 @@ Nodes: 3
 
 You should see a `Quorate: Yes` message indicating that quorum is established. If not, check the time sync (`timedatectl`), hostnames, and firewall settings.
 
-![Proxmox Cluster Status](/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-cluster-status.png)
+![Proxmox Cluster Status](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-cluster-status.png)
 
 
 ---
