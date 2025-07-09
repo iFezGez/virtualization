@@ -38,7 +38,8 @@ CEO @ Vesta Security LATAM
 
 Built as a real production-ready lab to demonstrate expertise in:
 - Proxmox VE - Clusters - Ceph
-
+- VMware ESXi
+- Docker - Docker Compose - Portainer
 ---
 
 This repository is public and reusable as a technical reference for clients and collaborators.
