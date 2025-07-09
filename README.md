@@ -12,16 +12,17 @@ Each service lives inside **`<service>/<version>/<install_type>/`** so multiple 
 ## Structure
 ```
 repo-root/
-├─ proxmox/8.4.1/bare-metal/
-│  ├─ assets/
-│  ├─ docs/
-│  ├─ exports/
-│  ├─ scripts/
-│  └─ templates/
-├─ vmware/
-├─ docker/
-├─ mkdocs.yml
-└─ LICENSE
+├─ docs
+├── proxmox/8.4.1/bare-metal/
+│   ├─ assets/
+│   ├─ docs/
+│   ├─ exports/
+│   ├─ scripts/
+│   └─ templates/
+├── vmware/
+├── docker/
+├── mkdocs.yml
+└── LICENSE
 ```
 ## Live Documentation
 
@@ -40,6 +41,7 @@ Built as a real production-ready lab to demonstrate expertise in:
 - Proxmox VE - Clusters - Ceph
 - VMware ESXi
 - Docker - Docker Compose - Portainer
+- KVM 
 ---
 
 This repository is public and reusable as a technical reference for clients and collaborators.
