@@ -23,7 +23,7 @@ pvecm status
 
 Expected output should include `Quorate: Yes`.
 
-![Proxmox Ha Status](/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ha-status.png)
+![Proxmox Ha Status](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ha-status.png)
 
 ---
 
@@ -81,5 +81,5 @@ Check if the HA service automatically starts the VM on another node.
 - Ceph RBD is ideal for HA setups.
 - Always test HA scenarios before going into production.
 
-## Screenshots / Diagrams
+
 
