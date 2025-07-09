@@ -1,18 +1,13 @@
 site_name: "Vesta Lab – Virtualization"
 repo_url:  "https://github.com/iFezGez/virtualization"
 
-docs_dir: ..
-
 theme:
   name: material
-  logo: ../img/logo.png
-  favicon: ../img/favicon.png
 
 markdown_extensions: [admonition, codehilite, toc]
 
 nav:
   - Overview: index.md
-
   - Proxmox VE 8.4.1:
       - Installation: proxmox/8.4.1/bare-metal/docs/installation.md
       - Networking:   proxmox/8.4.1/bare-metal/docs/network.md
@@ -21,10 +16,8 @@ nav:
       - High Availability: proxmox/8.4.1/bare-metal/docs/ha.md
       - Troubleshooting:
           - Cluster: proxmox/8.4.1/bare-metal/troubleshooting/cluster.md
-          - Ceph: proxmox/8.4.1/bare-metal/troubleshooting/ceph.md
-
+          - Ceph:    proxmox/8.4.1/bare-metal/troubleshooting/ceph.md
   - VMware ESXi (placeholder):
       - Overview: vmware/README.md
-
   - Docker / Portainer (placeholder):
       - Overview: docker/README.md
