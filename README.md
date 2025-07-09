@@ -21,8 +21,8 @@ repo-root/
 │   └─ templates/
 ├── vmware/
 ├── docker/
-├── mkdocs.yml
-└── LICENSE
+├─ mkdocs.yml
+└─ LICENSE
 ```
 ## Live Documentation
 
