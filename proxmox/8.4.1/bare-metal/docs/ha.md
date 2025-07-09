@@ -23,7 +23,7 @@ pvecm status
 
 Expected output should include `Quorate: Yes`.
 
-![Proxmox Ha Status](//proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ha-status.png)
+![Proxmox Ha Status](/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ha-status.png)
 
 ---
 
