@@ -1,14 +1,15 @@
-# Proxmox VE 8.4.1 – Bare-Metal Cluster
+# Proxmox VE 8.4.1 Documentation
 
-This sub-folder contains the complete, reproducible deployment of a **three-node Proxmox VE 8.4.1 cluster** running directly on bare-metal hardware.  
-All pages follow the Vesta Lab documentation template.
+This folder hosts the step-by-step guides for deploying and operating a **bare-metal three-node Proxmox VE 8.4.1 cluster**.  
+Each page follows the Vesta Lab documentation template (Quick-view topology, Prerequisites, Step 1–3, Validation, Troubleshooting).
 
-| Section | Purpose |
-|---------|---------|
-| `docs/` | Step-by-step guides (installation, networking, Ceph, HA, troubleshooting) |
-| `assets/` | Screenshots & diagrams referenced by the docs |
-| `scripts/` | Utility scripts (e.g. create Debian 12 cloud-init template) |
-| `templates/` | Cloud-init YAMLs & other config stubs |
+| Page | What you’ll find |
+|------|------------------|
+| **`installation.md`** | ISO install, initial networking, subscription keys |
+| **`network.md`** | Bridge/VLAN layout, bond creation, validation pings |
+| **`cluster.md`** | Joining nodes, quorum checks, fencing hints |
+| **`ceph.md`** | OSD prep, pool/CRUSH rules, CephFS storage screenshots |
+| **`ha.md`** | Enable HA manager, migrate test VM, fail-over demo |
 
 ## Quick links
 
@@ -16,7 +17,4 @@ All pages follow the Vesta Lab documentation template.
 - **Networking (VLAN & bridges)** ➜ [`docs/network.md`](docs/network.md)  
 - **Cluster setup** ➜ [`docs/cluster.md`](docs/cluster.md)  
 - **Ceph storage** ➜ [`docs/ceph.md`](docs/ceph.md)  
-- **High Availability** ➜ [`docs/ha.md`](docs/ha.md)  
-- **Troubleshooting** ➜  
-  - Cluster issues → [`troubleshooting/cluster.md`](troubleshooting/cluster.md)  
-  - Ceph OSD recovery → [`troubleshooting/ceph.md`](troubleshooting/ceph.md)
+- **High Availability** ➜ [`docs/ha.md`](docs/ha.md)
