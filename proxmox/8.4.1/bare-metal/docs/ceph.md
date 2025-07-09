@@ -29,7 +29,7 @@ pveceph mon create
 pveceph mgr create
 ```
 
-![Proxmox Ceph Status](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ceph-status.png)
+![Proxmox Ceph Status](proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ceph-status.png)
 
 ---
 
@@ -53,7 +53,7 @@ pveceph osd create /dev/sda --crush-device-class ssd
 
 Repeat for each disk across all nodes, changing the device accordingly.
 
-![Proxmox Ceph Osds](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ceph-osds.png)
+![Proxmox Ceph Osds](proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ceph-osds.png)
 
 ---
 
@@ -84,7 +84,7 @@ Then add it to Proxmox using:
 pvesm add ceph-fs cephfs-store   --monhost 10.30.0.2 10.30.0.3 10.30.0.4   --content iso,vztmpl,backup   --mountpoint /mnt/pve/ceph-fs
 ```
 
-![Proxmox Cephfs Storage](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-cephfs-storage.png)
+![Proxmox Cephfs Storage](proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-cephfs-storage.png)
 
 ---
 
