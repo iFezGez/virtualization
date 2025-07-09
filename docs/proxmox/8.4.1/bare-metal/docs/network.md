@@ -32,7 +32,7 @@ iface vmbr0 inet manual
         bridge-vids 2-4094
 ```
 
-![Proxmox Ve1 Network Interfaces](/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ve1-network-interfaces.png)
+![Proxmox Ve1 Network Interfaces](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ve1-network-interfaces.png)
 
 ## VLAN-tagged Subinterfaces 
 
@@ -47,7 +47,7 @@ iface vmbr0.10 inet static
         vlan-raw-device vmbr0
 ```
 
-![Proxmox Ve1 Network Vmbr0](/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ve1-network-vmbr0.png)
+![Proxmox Ve1 Network Vmbr0](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ve1-network-vmbr0.png)
 
 ## Notes
 
@@ -59,6 +59,6 @@ iface vmbr0.10 inet static
 
 ## Screenshots
 
-![Proxmox Network Vlan Tags](/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-network-vlan-tags.png)
+![Proxmox Network Vlan Tags](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-network-vlan-tags.png)
 
-![Proxmox Network Vlan Ping](/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-network-vlan-ping.png)
+![Proxmox Network Vlan Ping](/docs/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-network-vlan-ping.png)
