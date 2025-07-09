@@ -1,6 +1,10 @@
 site_name: "Vesta Lab – Virtualization"
 repo_url:  "https://github.com/iFezGez/virtualization"
 
+docs_dir: ..
+
+site_dir: ../_site
+
 theme:
   name: material
 
@@ -21,3 +25,4 @@ nav:
       - Overview: vmware/README.md
   - Docker / Portainer (placeholder):
       - Overview: docker/README.md
+
