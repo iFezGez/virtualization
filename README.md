@@ -1,6 +1,6 @@
 # Virtualization Repo
 
-Reference implementations of hypervisor & container platforms for Vesta Lab.  
+This repository contains reference implementations of hypervisor & container platforms for Vesta Lab.  
 Each service lives inside **`<service>/<version>/<install_type>/`** so multiple versions can coexist.
 
 | Service | Version | Install type | Docs entry |
@@ -9,7 +9,8 @@ Each service lives inside **`<service>/<version>/<install_type>/`** so multiple 
 | VMware ESXi | *TBD* | bare‑metal | _placeholder_ |
 | Docker / Portainer | *TBD* | VM | _placeholder_ |
 
-```text
+## Structure
+```
 repo-root/
 ├─ proxmox/8.4.1/bare-metal/
 │  ├─ assets/
@@ -22,3 +23,22 @@ repo-root/
 ├─ mkdocs.yml
 └─ LICENSE
 ```
+## Live Documentation
+
+The entire lab is published online with MkDocs:  
+- [https://ifezgez.github.io/virtualization/](https://ifezgez.github.io/virtualization/)
+
+## Maintainer
+
+**Ignacio Fernandez**  
+CEO @ Vesta Security LATAM  
+[https://vestasec.com](https://vestasec.com)
+
+---
+
+Built as a real production-ready lab to demonstrate expertise in:
+- Proxmox VE - Clusters - Ceph
+
+---
+
+This repository is public and reusable as a technical reference for clients and collaborators.
