@@ -12,7 +12,6 @@ Each service lives inside **`<service>/<version>/<install_type>/`** so multiple 
 ## Structure
 ```
 virtualization/
-├─ docs
 ├── proxmox/8.4.1/bare-metal/
 │   ├─ assets/
 │   ├─ docs/
