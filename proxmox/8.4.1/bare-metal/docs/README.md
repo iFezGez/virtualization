@@ -13,8 +13,8 @@ Each page follows the Vesta Lab documentation template (Quick-view topology, Pre
 
 ## Quick links
 
-- **Installation guide** ➜ [`installation`](installation.md)  
-- **Networking (VLAN & bridges)** ➜ [`network`](network.md)  
-- **Cluster setup** ➜ [`cluster`](cluster.md)  
-- **Ceph storage** ➜ [`ceph`](ceph.md)  
-- **High Availability** ➜ [`ha`](ha.md)
+- **Installation guide** ➜ [`installation.md`](installation.md)  
+- **Networking (VLAN & bridges)** ➜ [`network.md`](network.md)  
+- **Cluster setup** ➜ [`cluster.md`](cluster.md)  
+- **Ceph storage** ➜ [`ceph.md`](ceph.md)  
+- **High Availability** ➜ [`ha.md`](ha.md)
