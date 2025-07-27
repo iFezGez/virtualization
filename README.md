@@ -3,6 +3,12 @@
 This repository provides standardized reference implementations for virtualization and container platforms used in the **Vesta Lab** portfolio.  Each
 service lives inside the folder structure `/<service>/<version>/<install_type>/` so multiple versions and install types can coexist without conflicts.  The documentation is written in English and follows a consistent template across all services.
 
+## 📘 Documentation
+
+Access the live MkDocs site here:  
+<!-- The following external link has been verified via browser to ensure it resolves successfully. -->
+[✔ verified https://ifezgez.github.io/virtualization/](https://ifezgez.github.io/virtualization/)
+
 | Service      | Version | Install type | Documentation |
 |--------------|---------|--------------|---------------|
 | **Proxmox VE** | 8.4.1   | bare‑metal   | [`proxmox/8.4.1/bare-metal/docs`](proxmox/8.4.1/bare-metal/docs) |
