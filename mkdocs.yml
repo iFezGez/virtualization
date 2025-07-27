@@ -1,28 +1,18 @@
-site_name: "Vesta Lab – Virtualization"
-repo_url:  "https://github.com/iFezGez/virtualization"
-
-docs_dir: ..
-
-site_dir: ../_site
-
+site_name: "Proxmox VE 8.4.1 docs"
+repo_url:  "https://github.com/vestasec/virtualization"
+docs_dir: .
 theme:
   name: material
-
-markdown_extensions: [admonition, codehilite, toc]
-
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc
 nav:
-  - Overview: index.md
-  - Proxmox VE 8.4.1:
-      - Installation: proxmox/8.4.1/bare-metal/docs/installation.md
-      - Networking:   proxmox/8.4.1/bare-metal/docs/network.md
-      - Cluster:      proxmox/8.4.1/bare-metal/docs/cluster.md
-      - Ceph Storage: proxmox/8.4.1/bare-metal/docs/ceph.md
-      - High Availability: proxmox/8.4.1/bare-metal/docs/ha.md
-      - Troubleshooting:
-          - Cluster: proxmox/8.4.1/bare-metal/troubleshooting/cluster.md
-          - Ceph:    proxmox/8.4.1/bare-metal/troubleshooting/ceph.md
-  - VMware ESXi (placeholder):
-      - Overview: vmware/README.md
-  - Docker / Portainer (placeholder):
-      - Overview: docker/README.md
-
+  - Installation: proxmox/8.4.1/bare-metal/docs/installation.md
+  - Networking:   proxmox/8.4.1/bare-metal/docs/network.md
+  - Cluster:      proxmox/8.4.1/bare-metal/docs/cluster.md
+  - Ceph Storage: proxmox/8.4.1/bare-metal/docs/ceph.md
+  - High Availability: proxmox/8.4.1/bare-metal/docs/ha.md
+  - Troubleshooting:
+      - Cluster: proxmox/8.4.1/bare-metal/docs/troubleshooting_cluster.md
+      - Ceph:    proxmox/8.4.1/bare-metal/docs/troubleshooting_ceph.md

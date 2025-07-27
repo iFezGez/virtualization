@@ -1,4 +1,5 @@
 #cloud-config
+
 hostname: debian12-template
 manage_etc_hosts: true
 
