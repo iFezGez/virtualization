@@ -1,47 +1,42 @@
-# Virtualization Repo
+# Virtualization Repository
 
-This repository contains reference implementations of hypervisor & container platforms for Vesta Lab.  
-Each service lives inside **`<service>/<version>/<install_type>/`** so multiple versions can coexist.
+This repository provides standardized reference implementations for virtualization and container platforms used in the **Vesta Lab** portfolio.  Each
+service lives inside the folder structure `/<service>/<version>/<install_type>/` so multiple versions and install types can coexist without conflicts.  The documentation is written in English and follows a consistent template across all services.
 
-| Service | Version | Install type | Docs entry |
-|---------|---------|--------------|------------|
-| **Proxmox VE** | 8.4.1 | bare‑metal | [`proxmox/8.4.1/bare-metal/docs/`](proxmox/8.4.1/bare-metal/docs)
-/docs/) |
-| VMware ESXi | *TBD* | bare‑metal | _placeholder_ |
-| Docker / Portainer | *TBD* | VM | _placeholder_ |
+| Service      | Version | Install type | Documentation |
+|--------------|---------|--------------|---------------|
+| **Proxmox VE** | 8.4.1   | bare‑metal   | [`proxmox/8.4.1/bare-metal/docs`](proxmox/8.4.1/bare-metal/docs) |
+| VMware ESXi  | –       | –            | _work in progress_ |
+| Docker / Portainer | – | –            | _work in progress_ |
 
 ## Structure
-```
+
+```text
 virtualization/
 ├── proxmox/8.4.1/bare-metal/
 │   ├─ assets/
+│   │   └─ screenshots/
 │   ├─ docs/
 │   ├─ exports/
 │   ├─ scripts/
 │   └─ templates/
 ├── vmware/
 ├── docker/
-├─ mkdocs.yml
-└─ LICENSE
+├── mkdocs.yml
+└── LICENSE
 ```
-## Live Documentation
 
-The entire lab is published online with MkDocs:  
-- [https://ifezgez.github.io/virtualization/](https://ifezgez.github.io/virtualization/)
+### How to Use This Repository
 
-## Maintainer
+1. Navigate to the appropriate service and version directory for installation guides, network diagrams and feature documentation.
+2. Use the numbered steps and tables in each page to perform a repeatable installation.
+3. Where commands are provided, copy them into a shell on the target host.  Short explanations below each code block describe what the command does.
+4. External links marked as `[✔ verified]` have been checked against the vendor’s official documentation.
 
-**Ignacio Fernandez**  
-CEO @ Vesta Security LATAM  
-[https://vestasec.com](https://vestasec.com)
+### Contributing
 
----
+To contribute improvements or add new services, create a feature branch (e.g. `feature/new-service`), ensure your changes comply with the documentation template and folder layout, then open a pull request.  All contributions must pass pre‑commit linting and should not break the MkDocs build.
 
-Built as a real production-ready lab to demonstrate expertise in:
-- Proxmox VE - Clusters - Ceph
-- VMware ESXi
-- Docker - Docker Compose - Portainer
-- KVM 
----
+### License
 
-This repository is public and reusable as a technical reference for clients and collaborators.
+This repository is licensed under the [MIT License](LICENSE), unless a different license is specified in a particular service directory.
