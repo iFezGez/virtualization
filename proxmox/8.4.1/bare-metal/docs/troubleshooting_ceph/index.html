@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../../docs/ha/">
+        <link rel="prev" href="../troubleshooting_cluster/">
       
-      
-        <link rel="next" href="../ceph/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Cluster - Vesta Lab – Virtualization</title>
+        <title>Ceph - Proxmox VE 8.4.1 docs</title>
       
     
     
@@ -62,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cluster-troubleshooting" class="md-skip">
+        <a href="#proxmox-ve-841-ceph-troubleshooting" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +76,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="Vesta Lab – Virtualization" class="md-header__button md-logo" aria-label="Vesta Lab – Virtualization" data-md-component="logo">
+    <a href="../../../../.." title="Proxmox VE 8.4.1 docs" class="md-header__button md-logo" aria-label="Proxmox VE 8.4.1 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,13 +90,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Vesta Lab – Virtualization
+            Proxmox VE 8.4.1 docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cluster
+              Ceph
             
           </span>
         </div>
@@ -188,13 +186,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="Vesta Lab – Virtualization" class="md-nav__button md-logo" aria-label="Vesta Lab – Virtualization" data-md-component="logo">
+    <a href="../../../../.." title="Proxmox VE 8.4.1 docs" class="md-nav__button md-logo" aria-label="Proxmox VE 8.4.1 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Vesta Lab – Virtualization
+    Proxmox VE 8.4.1 docs
   </label>
   
     <div class="md-nav__source">
@@ -237,50 +235,10 @@
       
   
   
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Proxmox VE 8.4.1
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Proxmox VE 8.4.1
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../../docs/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -294,16 +252,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../docs/network/" class="md-nav__link">
+      <a href="../network/" class="md-nav__link">
         
   
   
@@ -317,7 +274,112 @@
     </li>
   
 
-              
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cluster/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cluster
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ceph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ceph Storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    High Availability
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -326,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/cluster/" class="md-nav__link">
+      <a href="../troubleshooting_cluster/" class="md-nav__link">
         
   
   
@@ -341,92 +403,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../docs/ceph/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ceph Storage
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../docs/ha/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    High Availability
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Troubleshooting
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_6">
-            <span class="md-nav__icon md-icon"></span>
-            Troubleshooting
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -449,7 +425,7 @@
   
   
   <span class="md-ellipsis">
-    Cluster
+    Ceph
     
   </span>
   
@@ -462,7 +438,7 @@
   
   
   <span class="md-ellipsis">
-    Cluster
+    Ceph
     
   </span>
   
@@ -485,27 +461,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#issue-node-already-part-of-a-cluster" class="md-nav__link">
+  <a href="#validation" class="md-nav__link">
     <span class="md-ellipsis">
-      Issue: Node Already Part of a Cluster
+      Validation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#issue-corosync-token-has-not-been-received-errors" class="md-nav__link">
+  <a href="#additional-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Issue: Corosync “Token has not been received” Errors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#issue-host-key-verification-failed-when-opening-console" class="md-nav__link">
-    <span class="md-ellipsis">
-      Issue: Host Key Verification Failed When Opening Console
+      Additional resources
     </span>
   </a>
   
@@ -515,173 +482,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ceph/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ceph
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    VMware ESXi (placeholder)
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            VMware ESXi (placeholder)
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../../vmware/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Docker / Portainer (placeholder)
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Docker / Portainer (placeholder)
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../../docker/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -721,27 +521,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#issue-node-already-part-of-a-cluster" class="md-nav__link">
+  <a href="#validation" class="md-nav__link">
     <span class="md-ellipsis">
-      Issue: Node Already Part of a Cluster
+      Validation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#issue-corosync-token-has-not-been-received-errors" class="md-nav__link">
+  <a href="#additional-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Issue: Corosync “Token has not been received” Errors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#issue-host-key-verification-failed-when-opening-console" class="md-nav__link">
-    <span class="md-ellipsis">
-      Issue: Host Key Verification Failed When Opening Console
+      Additional resources
     </span>
   </a>
   
@@ -766,39 +557,82 @@
   
 
 
-<h1 id="cluster-troubleshooting">Cluster Troubleshooting</h1>
-<hr />
-<h2 id="issue-node-already-part-of-a-cluster">Issue: Node Already Part of a Cluster</h2>
-<p>If a node was previously part of another cluster or initialized incorrectly, reset it:</p>
-<div class="codehilite"><pre><span></span><code>systemctl<span class="w"> </span>stop<span class="w"> </span>corosync<span class="w"> </span>pve-cluster
-rm<span class="w"> </span>-rf<span class="w"> </span>/etc/corosync/*<span class="w"> </span>/var/lib/pve-cluster/*
-systemctl<span class="w"> </span>start<span class="w"> </span>pve-cluster
-pvecm<span class="w"> </span>add<span class="w"> </span><span class="m">10</span>.10.0.11
+<h1 id="proxmox-ve-841-ceph-troubleshooting">Proxmox VE 8.4.1 – Ceph Troubleshooting</h1>
+<p>Ceph is robust but occasionally returns warnings or errors during installation and operation.  Use the table below to diagnose common issues.</p>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>401 Unauthorized</code> when installing Ceph</strong></td>
+<td>The Ceph packages are pulled from the Proxmox enterprise repository, which requires a subscription.</td>
+<td>Configure the no‑subscription Ceph repository:</td>
+</tr>
+<tr>
+<td><code>echo 'deb http://download.proxmox.com/debian/ceph-quincy bookworm no-subscription' &gt; /etc/apt/sources.list.d/ceph.list</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Then run <code>apt update</code> and repeat the installation.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong><code>device is already in use</code> during OSD creation</strong></td>
+<td>The target disk contains existing partitions or Ceph metadata from previous setups.</td>
+<td>List existing logical volumes with <code>ceph-volume lvm list</code>.  Remove all signatures, then recreate the OSD:</td>
+</tr>
+<tr>
+<td><code>sgdisk --zap-all /dev/sdX &amp;&amp; wipefs -a /dev/sdX</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Replace <code>/dev/sdX</code> with the appropriate device.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>“too many PGs per OSD” warning</strong></td>
+<td>The pool has more placement groups (PGs) than recommended for the number of OSDs, leading to over‑utilisation.</td>
+<td>Reduce the number of PGs when creating pools or set a higher limit:</td>
+</tr>
+<tr>
+<td><code>ceph osd pool set &lt;pool&gt; pg_num &lt;value&gt;</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>ceph config set global mon_max_pg_per_osd 500</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>CephFS mount fails at boot</strong></td>
+<td>The CephFS entry in <code>storage.cfg</code> or systemd mount unit is stale.</td>
+<td>Remove the problematic entry from <code>/etc/pve/storage.cfg</code> or mask the mount unit:</td>
+</tr>
+<tr>
+<td><code>systemctl mask mnt-pve-ceph-fs.mount</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="validation">Validation</h2>
+<p>After applying a fix, always check the overall cluster health:</p>
+<div class="codehilite"><pre><span></span><code>ceph<span class="w"> </span>-s
 </code></pre></div>
 
-<hr />
-<h2 id="issue-corosync-token-has-not-been-received-errors">Issue: Corosync “Token has not been received” Errors</h2>
-<ul>
-<li>Verify VLAN 30 (cluster network) is reachable from all nodes:</li>
-</ul>
-<div class="codehilite"><pre><span></span><code>ping<span class="w"> </span><span class="m">10</span>.30.0.x
-</code></pre></div>
-
-<ul>
-<li>Ensure the MTU is consistent across interfaces (e.g., all at <code>1500</code> or <code>9000</code>):</li>
-</ul>
-<div class="codehilite"><pre><span></span><code>ip<span class="w"> </span>link<span class="w"> </span><span class="nb">set</span><span class="w"> </span>dev<span class="w"> </span>&lt;interface&gt;<span class="w"> </span>mtu<span class="w"> </span><span class="m">1500</span>
-</code></pre></div>
-
-<p>Replace <code>&lt;interface&gt;</code> with the correct NIC (e.g., <code>vmbr1</code> or <code>eth1</code>).</p>
-<hr />
-<h2 id="issue-host-key-verification-failed-when-opening-console">Issue: Host Key Verification Failed When Opening Console</h2>
-<p>This happens if certificates are mismatched. Run the following on each node:</p>
-<div class="codehilite"><pre><span></span><code>pvecm<span class="w"> </span>updatecerts<span class="w"> </span>--force
-systemctl<span class="w"> </span>restart<span class="w"> </span>pveproxy<span class="w"> </span>pvedaemon
-</code></pre></div>
-
-<p>This regenerates and synchronizes the cluster certificates.</p>
+<p>The output should indicate <code>HEALTH_OK</code>.  For pool‑related warnings, also run <code>ceph osd df tree</code> to inspect OSD utilisation.</p>
+<h2 id="additional-resources">Additional resources</h2>
+<p>The <a href="https://pve.proxmox.com/pve-docs/chapter-pveceph.html">Proxmox Ceph documentation</a> contains detailed explanations of Ceph components and advanced tuning.  Refer to <a href="../ceph/">Ceph Storage</a> for installation and configuration steps.</p>
 
 
 

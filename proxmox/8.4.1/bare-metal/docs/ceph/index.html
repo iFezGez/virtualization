@@ -20,7 +20,7 @@
     
     
       
-        <title>Ceph Storage - Vesta Lab – Virtualization</title>
+        <title>Ceph Storage - Proxmox VE 8.4.1 docs</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="Vesta Lab – Virtualization" class="md-header__button md-logo" aria-label="Vesta Lab – Virtualization" data-md-component="logo">
+    <a href="../../../../.." title="Proxmox VE 8.4.1 docs" class="md-header__button md-logo" aria-label="Proxmox VE 8.4.1 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Vesta Lab – Virtualization
+            Proxmox VE 8.4.1 docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -188,13 +188,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="Vesta Lab – Virtualization" class="md-nav__button md-logo" aria-label="Vesta Lab – Virtualization" data-md-component="logo">
+    <a href="../../../../.." title="Proxmox VE 8.4.1 docs" class="md-nav__button md-logo" aria-label="Proxmox VE 8.4.1 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Vesta Lab – Virtualization
+    Proxmox VE 8.4.1 docs
   </label>
   
     <div class="md-nav__source">
@@ -237,46 +237,6 @@
       
   
   
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Proxmox VE 8.4.1
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Proxmox VE 8.4.1
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
@@ -294,10 +254,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -317,10 +276,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -340,10 +298,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
     
@@ -399,18 +356,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-install-ceph-on-every-node" class="md-nav__link">
+  <a href="#quickview-topology-matrix" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Install Ceph on Every Node
+      Quick‑view topology / matrix
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-initialize-the-ceph-cluster" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Initialize the Ceph Cluster
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-install-ceph-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1 – Install Ceph Packages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-initialise-the-ceph-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2 – Initialise the Ceph Cluster
     </span>
   </a>
   
@@ -419,7 +394,7 @@
         <li class="md-nav__item">
   <a href="#step-3-create-osds" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Create OSDs
+      Step 3 – Create OSDs
     </span>
   </a>
   
@@ -428,7 +403,7 @@
         <li class="md-nav__item">
   <a href="#step-4-create-pools" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 4: Create Pools
+      Step 4 – Create Pools
     </span>
   </a>
   
@@ -437,7 +412,7 @@
         <li class="md-nav__item">
   <a href="#step-5-add-cephfs-for-iso-and-templates" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 5: Add CephFS for ISO and Templates
+      Step 5 – Add CephFS for ISO and Templates
     </span>
   </a>
   
@@ -446,7 +421,25 @@
         <li class="md-nav__item">
   <a href="#step-6-validate-the-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 6: Validate the Setup
+      Step 6 – Validate the Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next steps / Links
     </span>
   </a>
   
@@ -459,10 +452,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -482,10 +474,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -499,10 +490,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -515,8 +506,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting
           </label>
@@ -529,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/cluster/" class="md-nav__link">
+      <a href="../troubleshooting_cluster/" class="md-nav__link">
         
   
   
@@ -552,156 +543,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/ceph/" class="md-nav__link">
+      <a href="../troubleshooting_ceph/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Ceph
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    VMware ESXi (placeholder)
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            VMware ESXi (placeholder)
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../../vmware/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Docker / Portainer (placeholder)
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Docker / Portainer (placeholder)
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../../docker/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
     
   </span>
   
@@ -746,18 +593,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-install-ceph-on-every-node" class="md-nav__link">
+  <a href="#quickview-topology-matrix" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Install Ceph on Every Node
+      Quick‑view topology / matrix
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-initialize-the-ceph-cluster" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Initialize the Ceph Cluster
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-install-ceph-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1 – Install Ceph Packages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-initialise-the-ceph-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2 – Initialise the Ceph Cluster
     </span>
   </a>
   
@@ -766,7 +631,7 @@
         <li class="md-nav__item">
   <a href="#step-3-create-osds" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Create OSDs
+      Step 3 – Create OSDs
     </span>
   </a>
   
@@ -775,7 +640,7 @@
         <li class="md-nav__item">
   <a href="#step-4-create-pools" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 4: Create Pools
+      Step 4 – Create Pools
     </span>
   </a>
   
@@ -784,7 +649,7 @@
         <li class="md-nav__item">
   <a href="#step-5-add-cephfs-for-iso-and-templates" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 5: Add CephFS for ISO and Templates
+      Step 5 – Add CephFS for ISO and Templates
     </span>
   </a>
   
@@ -793,7 +658,25 @@
         <li class="md-nav__item">
   <a href="#step-6-validate-the-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 6: Validate the Setup
+      Step 6 – Validate the Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next steps / Links
     </span>
   </a>
   
@@ -818,19 +701,53 @@
   
 
 
-<h1 id="proxmox-ve-841-ceph-storage">Proxmox VE 8.4.1 — Ceph Storage</h1>
-<blockquote>
-<p>All commands can be issued from <strong>any</strong> node. Replace device names as needed.</p>
-</blockquote>
-<hr />
-<h2 id="step-1-install-ceph-on-every-node">Step 1: Install Ceph on Every Node</h2>
-<p>Install the Ceph packages using the no-subscription repository:</p>
+<h1 id="proxmox-ve-841-ceph-storage">Proxmox VE 8.4.1 – Ceph Storage</h1>
+<p>Ceph provides scalable, fault‑tolerant storage for VMs and containers.  This guide walks through installing Ceph on a three‑node Proxmox cluster, creating OSDs and pools, and adding CephFS for ISO/template storage.</p>
+<h2 id="quickview-topology-matrix">Quick‑view topology / matrix</h2>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Cluster VLAN (10.30.0.0/24)</th>
+<th>Disks for OSDs</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ve1</strong></td>
+<td>10.30.0.2</td>
+<td><code>/dev/sda</code> (ssd)</td>
+<td>System disk separate</td>
+</tr>
+<tr>
+<td><strong>ve2</strong></td>
+<td>10.30.0.3</td>
+<td><code>/dev/nvme0n1</code> (ssd)</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>ve3</strong></td>
+<td>10.30.0.4</td>
+<td><code>/dev/sda</code> (hdd)</td>
+<td>Lower performance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>A healthy Proxmox cluster with quorum (see <a href="../cluster/">Cluster Setup</a>).</li>
+<li>At least one unused disk per node dedicated for Ceph OSDs.  All existing partitions on these disks will be destroyed.</li>
+<li>Sufficient network bandwidth on VLAN 30 for replication traffic.  Using jumbo frames (MTU 9000) is recommended.</li>
+</ul>
+<h2 id="step-1-install-ceph-packages">Step 1 – Install Ceph Packages</h2>
+<p>Install Ceph on every node using the no‑subscription repository:</p>
 <div class="codehilite"><pre><span></span><code>pveceph<span class="w"> </span>install<span class="w"> </span>--repository<span class="w"> </span>no-subscription
 </code></pre></div>
 
-<hr />
-<h2 id="step-2-initialize-the-ceph-cluster">Step 2: Initialize the Ceph Cluster</h2>
-<p>Run once on one node (e.g., ve1):</p>
+<p>This downloads and installs the Ceph <code>quincy</code> or <code>reef</code> packages from Proxmox repositories.  Confirm success by running <code>ceph --version</code>.</p>
+<h2 id="step-2-initialise-the-ceph-cluster">Step 2 – Initialise the Ceph Cluster</h2>
+<p>Run the initialization once on <strong>ve1</strong>, specifying the cluster network (VLAN 30):</p>
 <div class="codehilite"><pre><span></span><code>pveceph<span class="w"> </span>init<span class="w"> </span>--network<span class="w"> </span><span class="m">10</span>.30.0.0/24
 </code></pre></div>
 
@@ -839,73 +756,50 @@
 pveceph<span class="w"> </span>mgr<span class="w"> </span>create
 </code></pre></div>
 
-<p><img alt="Proxmox Ceph Status" src="/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ceph-status.png" /></p>
-<hr />
-<h2 id="step-3-create-osds">Step 3: Create OSDs</h2>
-<p>Prepare and assign disks on each node.</p>
-<table>
-<thead>
-<tr>
-<th>Node</th>
-<th>Disk</th>
-<th>Class</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ve1</td>
-<td>/dev/sda</td>
-<td>ssd</td>
-</tr>
-<tr>
-<td>ve2</td>
-<td>/dev/vme0n1</td>
-<td>ssd</td>
-</tr>
-<tr>
-<td>ve3</td>
-<td>/dev/sda</td>
-<td>hdd</td>
-</tr>
-</tbody>
-</table>
-<p>For each disk:</p>
-<div class="codehilite"><pre><span></span><code>sgdisk<span class="w"> </span>--zap-all<span class="w"> </span>/dev/sda
-wipefs<span class="w"> </span>-a<span class="w"> </span>/dev/sda
+<p>In the web GUI, you will see the new monitors and managers appear under <strong>Datacenter → Ceph</strong>.</p>
+<p><img alt="Ceph status dashboard showing monitors and managers" src="../../assets/screenshots/proxmox-ceph-status.png" /></p>
+<h2 id="step-3-create-osds">Step 3 – Create OSDs</h2>
+<p>Prepare and assign disks to Ceph.  The table above lists one disk per node; adjust as needed.  For each disk run the following commands on the appropriate node:</p>
+<div class="codehilite"><pre><span></span><code>sgdisk<span class="w"> </span>--zap-all<span class="w"> </span>/dev/sda<span class="w">       </span><span class="c1"># remove existing partition table</span>
+wipefs<span class="w"> </span>-a<span class="w"> </span>/dev/sda<span class="w">             </span><span class="c1"># erase filesystem signatures</span>
 pveceph<span class="w"> </span>osd<span class="w"> </span>create<span class="w"> </span>/dev/sda<span class="w"> </span>--crush-device-class<span class="w"> </span>ssd
 </code></pre></div>
 
-<p>Repeat for each disk across all nodes, changing the device accordingly.</p>
-<p><img alt="Proxmox Ceph Osds" src="/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ceph-osds.png" /></p>
-<hr />
-<h2 id="step-4-create-pools">Step 4: Create Pools</h2>
-<p>Create different pools for VM storage and backups:</p>
+<p>Replace <code>/dev/sda</code> with the correct device (e.g. <code>/dev/nvme0n1</code> or <code>/dev/sdb</code>).  This command prepares the disk, adds it to the CRUSH map with the <code>ssd</code> or <code>hdd</code> class and starts the OSD daemon.</p>
+<p><img alt="Ceph OSDs list in the Proxmox interface" src="../../assets/screenshots/proxmox-ceph-osds.png" /></p>
+<h2 id="step-4-create-pools">Step 4 – Create Pools</h2>
+<p>Create at least one pool for virtual machine disks and another for backups.  For example:</p>
 <div class="codehilite"><pre><span></span><code>pveceph<span class="w"> </span>pool<span class="w"> </span>create<span class="w"> </span>ceph-pool<span class="w"> </span>--application<span class="w"> </span>rbd
 ceph<span class="w"> </span>osd<span class="w"> </span>pool<span class="w"> </span><span class="nb">set</span><span class="w"> </span>ceph-pool<span class="w"> </span>size<span class="w"> </span><span class="m">2</span>
 </code></pre></div>
 
-<p><img alt="Proxmox Ceph Pools" src="/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-ceph-pools.png" /></p>
-<hr />
-<h2 id="step-5-add-cephfs-for-iso-and-templates">Step 5: Add CephFS for ISO and Templates</h2>
-<p>Create a CephFS volume and add it to Proxmox storage:</p>
+<p>The <code>size</code> parameter determines the replication level.  A value of <code>2</code> means each block is stored on two different OSDs; increase to <code>3</code> for higher durability (requires at least three OSDs).</p>
+<p><img alt="List of Ceph pools configured in the GUI" src="../../assets/screenshots/proxmox-ceph-pools.png" /></p>
+<h2 id="step-5-add-cephfs-for-iso-and-templates">Step 5 – Add CephFS for ISO and Templates</h2>
+<p>To store ISO files and container templates centrally, create a CephFS volume:</p>
 <div class="codehilite"><pre><span></span><code>pveceph<span class="w"> </span>fs<span class="w"> </span>create<span class="w"> </span>cephfs<span class="w"> </span>--data-pool<span class="w"> </span>cephfs_data<span class="w"> </span>--metadata-pool<span class="w"> </span>cephfs_metadata
 </code></pre></div>
 
-<p>Then add it to Proxmox using:</p>
-<div class="codehilite"><pre><span></span><code>pvesm<span class="w"> </span>add<span class="w"> </span>ceph-fs<span class="w"> </span>cephfs-store<span class="w">   </span>--monhost<span class="w"> </span><span class="m">10</span>.30.0.2<span class="w"> </span><span class="m">10</span>.30.0.3<span class="w"> </span><span class="m">10</span>.30.0.4<span class="w">   </span>--content<span class="w"> </span>iso,vztmpl,backup<span class="w">   </span>--mountpoint<span class="w"> </span>/mnt/pve/ceph-fs
+<p>Then mount the filesystem in Proxmox by adding a storage entry.  Replace the monitor IPs with your cluster nodes:</p>
+<div class="codehilite"><pre><span></span><code>pvesm<span class="w"> </span>add<span class="w"> </span>ceph-fs<span class="w"> </span>cephfs-store<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--monhost<span class="w"> </span><span class="m">10</span>.30.0.2<span class="w"> </span><span class="m">10</span>.30.0.3<span class="w"> </span><span class="m">10</span>.30.0.4<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--content<span class="w"> </span>iso,vztmpl,backup<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--mountpoint<span class="w"> </span>/mnt/pve/ceph-fs
 </code></pre></div>
 
-<p><img alt="Proxmox Cephfs Storage" src="/proxmox/8.4.1/bare-metal/assets/screenshots/proxmox-cephfs-storage.png" /></p>
-<hr />
-<h2 id="step-6-validate-the-setup">Step 6: Validate the Setup</h2>
-<p>Check the Ceph cluster health:</p>
+<p>After running the command, verify the new storage appears in the web GUI under <strong>Datacenter → Storage</strong>.</p>
+<p><img alt="CephFS storage entry in Proxmox" src="../../assets/screenshots/proxmox-cephfs-storage.png" /></p>
+<h2 id="step-6-validate-the-setup">Step 6 – Validate the Setup</h2>
+<p>Check overall Ceph health and storage status:</p>
 <div class="codehilite"><pre><span></span><code>ceph<span class="w"> </span>-s
 pvesm<span class="w"> </span>status
 </code></pre></div>
 
-<p>You should see <code>HEALTH_OK</code> and the <code>cephfs-store</code> mounted correctly.</p>
-<hr />
-<p>Ceph is now configured and integrated with Proxmox VE.</p>
+<p>The <code>ceph -s</code> output should indicate <code>HEALTH_OK</code>.  The <code>pvesm status</code> command lists the new RBD and CephFS stores as <em>available</em>.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>Refer to the <a href="../troubleshooting_ceph/">Ceph Troubleshooting</a> page for solutions to common warnings (e.g. <code>401 Unauthorized</code> during installation, disks already in use or PG counts).</p>
+<h2 id="next-steps-links">Next steps / Links</h2>
+<p>Once storage is in place, enable automated failover by following the <a href="../ha/">High Availability</a> guide.  Consult the official Proxmox Ceph documentation for detailed tuning and capacity planning [✔ verified https://www.virtualizationhowto.com/2022/08/proxmox-update-no-subscription-repository-configuration/].</p>
 
 
 
