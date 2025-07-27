@@ -11,7 +11,7 @@ Access the live MkDocs site here:
 
 | Service      | Version | Install type | Documentation |
 |--------------|---------|--------------|---------------|
-| **Proxmox VE** | 8.4.1   | bare‑metal   | [`proxmox/8.4.1/bare-metal/docs`](proxmox/8.4.1/bare-metal/docs) |
+| **Proxmox VE** | 8.4.1   | bare‑metal   | [`docs/proxmox/8.4.1/bare-metal/docs`](docs/proxmox/8.4.1/bare-metal/docs) |
 | VMware ESXi  | –       | –            | _work in progress_ |
 | Docker / Portainer | – | –            | _work in progress_ |
 
@@ -19,15 +19,15 @@ Access the live MkDocs site here:
 
 ```text
 virtualization/
-├── proxmox/8.4.1/bare-metal/
+├── docs/                       # source files for MkDocs
+│   ├─ index.md
+│   └─ proxmox/8.4.1/bare-metal/docs/
+├── proxmox/8.4.1/bare-metal/   # canonical service layout
 │   ├─ assets/
-│   │   └─ screenshots/
 │   ├─ docs/
 │   ├─ exports/
 │   ├─ scripts/
 │   └─ templates/
-├── vmware/
-├── docker/
 ├── mkdocs.yml
 └── LICENSE
 ```
