@@ -1,14 +1,12 @@
 site_name: "Proxmox VE 8.4.1 docs"
 repo_url:  "https://github.com/vestasec/virtualization"
-
+docs_dir: .
 theme:
   name: material
-
 markdown_extensions:
   - admonition
   - codehilite
   - toc
-
 nav:
   - Installation: proxmox/8.4.1/bare-metal/docs/installation.md
   - Networking:   proxmox/8.4.1/bare-metal/docs/network.md
