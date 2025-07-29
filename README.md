@@ -7,7 +7,7 @@ service lives inside the folder structure `/<service>/<version>/<install_type>/`
 
 Access the live MkDocs site here:  
 <!-- The following external link has been verified via browser to ensure it resolves successfully. -->
-[verified https://ifezgez.github.io/virtualization/](https://ifezgez.github.io/virtualization/)
+[https://ifezgez.github.io/virtualization/](https://ifezgez.github.io/virtualization/)
 
 | Service      | Version | Install type | Documentation |
 |--------------|---------|--------------|---------------|
