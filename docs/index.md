@@ -1,9 +1,5 @@
-# Virtualization Repository
+# Virtualization Documentation
 
-This site collects reference deployments for hypervisors and container platforms used in Vesta Lab projects.
+Welcome to the Vesta Lab virtualization stack.
 
-## Contents
-- **Proxmox VE 8.4.1** – full bare-metal cluster walkthrough  
-- VMware ESXi – *work in progress*  
-- Docker / Portainer – *work in progress*
-- KVM / QEMU / Libvirt – *work in progress*
+This documentation covers installation, networking, clustering, and storage configuration for the Proxmox 8.4.1 bare-metal deployment.
