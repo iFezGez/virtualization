@@ -1,4 +1,4 @@
-site_name: "Proxmox VE 8.4.1 docs"
+site_name: "Virtualization Repository"
 repo_url:  "https://github.com/ifezgez/virtualization"
 
 docs_dir: docs
