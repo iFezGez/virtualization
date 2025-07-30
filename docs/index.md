@@ -7,8 +7,5 @@ This site collects reference deployments for hypervisors and container platforms
 
 ## Contents
 
-- **Proxmox VE 8.4.1** – full bare-metal cluster walkthrough  
-- **VMware ESXi** – *work in progress*  
-- **Docker / Portainer** – *work in progress*  
-- **KVM / QEMU / Libvirt** – *work in progress*
+- **Proxmox VE 8.4.1** – full bare-metal cluster walkthrough
  
