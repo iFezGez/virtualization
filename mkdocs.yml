@@ -21,3 +21,10 @@ nav:
       - Ceph Storage: proxmox/8.4.1/bare-metal/docs/ceph.md
       - High Availability: proxmox/8.4.1/bare-metal/docs/ha.md
 
+  - Docker 28.3.3 (VM):
+      - Installation: docker/28.3.3/vm/docs/installation.md
+      - Configuration: docker/28.3.3/vm/docs/configuration.md
+      - Networking: docker/28.3.3/vm/docs/network.md
+      - Features: docker/28.3.3/vm/docs/features.md
+
+
