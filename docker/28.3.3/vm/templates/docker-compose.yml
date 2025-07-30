@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  web:
+    image: nginx:alpine
+    container_name: nginx_test
+    ports:
+      - "8080:80"
+    networks:
+      - default
+    restart: unless-stopped
+
+networks:
+  default:
+    driver: bridge

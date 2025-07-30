@@ -1,0 +1,10 @@
+#cloud-config
+hostname: docker-node
+users:
+  - name: root
+    ssh-authorized-keys:
+      - ssh-rsa AAAA...
+    shell: /bin/bash
+runcmd:
+  - apt update && apt upgrade -y
+  - bash /root/install_docker.sh

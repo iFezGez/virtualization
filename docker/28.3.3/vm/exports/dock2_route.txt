@@ -1,0 +1,3 @@
+default via 10.20.0.1 dev ens18 onlink
+10.20.0.0/24 dev ens18 proto kernel scope link src 10.20.0.21
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown
