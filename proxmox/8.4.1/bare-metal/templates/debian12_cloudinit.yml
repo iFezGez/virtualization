@@ -1,0 +1,27 @@
+#cloud-config
+
+hostname: debian12-template
+manage_etc_hosts: true
+
+users:
+  - name: vesta
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    shell: /bin/bash
+    lock_passwd: false
+    plain_text_passwd: 'password'
+
+ssh_pwauth: true
+disable_root: false
+
+chpasswd:
+  expire: false
+
+package_update: true
+package_upgrade: true
+packages:
+  - qemu-guest-agent
+
+runcmd:
+  - systemctl enable qemu-guest-agent
+  - systemctl start qemu-guest-agent

@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../installation/">
-      
-      
-        <link rel="next" href="../cluster/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Networking - Proxmox VE 8.4.1 docs</title>
+        <title>Ceph Troubleshooting - Proxmox VE 8.4.1 docs</title>
       
     
     
@@ -62,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#proxmox-ve-841-networking-baremetal" class="md-skip">
+        <a href="#ceph-troubleshooting" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Networking
+              Ceph Troubleshooting
             
           </span>
         </div>
@@ -237,20 +233,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -266,7 +260,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Proxmox VE 8.4.1 (bare-metal)
@@ -280,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../docs/installation/" class="md-nav__link">
         
   
   
@@ -300,32 +294,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Networking
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../docs/network/" class="md-nav__link">
         
   
   
@@ -336,104 +308,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quickview-topology-matrix" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick‑view topology / matrix
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-create-a-vlanaware-bridge" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1 – Create a VLAN‑aware Bridge
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-define-vlan-subinterfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2 – Define VLAN Subinterfaces
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 2 – Define VLAN Subinterfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gui-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      GUI configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-validate-connectivity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3 – Validate Connectivity
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next steps / Links
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -446,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cluster/" class="md-nav__link">
+      <a href="../../docs/cluster/" class="md-nav__link">
         
   
   
@@ -469,7 +343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ceph/" class="md-nav__link">
+      <a href="../../docs/ceph/" class="md-nav__link">
         
   
   
@@ -492,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ha/" class="md-nav__link">
+      <a href="../../docs/ha/" class="md-nav__link">
         
   
   
@@ -535,92 +409,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quickview-topology-matrix" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick‑view topology / matrix
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-create-a-vlanaware-bridge" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1 – Create a VLAN‑aware Bridge
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-define-vlan-subinterfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2 – Define VLAN Subinterfaces
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 2 – Define VLAN Subinterfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gui-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      GUI configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-validate-connectivity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3 – Validate Connectivity
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next steps / Links
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -638,130 +426,38 @@
   
 
 
-<h1 id="proxmox-ve-841-networking-baremetal">Proxmox VE 8.4.1 – Networking (Bare‑Metal)</h1>
-<p>This page describes how to configure bridges and VLAN tagging on each Proxmox host.  A consistent network layout is critical for cluster communication and Ceph traffic.</p>
-<h2 id="quickview-topology-matrix">Quick‑view topology / matrix</h2>
+<h1 id="ceph-troubleshooting">Ceph Troubleshooting</h1>
 <table>
 <thead>
 <tr>
-<th>VLAN ID</th>
-<th>Name</th>
-<th>Purpose</th>
-<th>CIDR</th>
+<th>Symptom</th>
+<th>Fix</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>10</strong></td>
-<td>mgmt</td>
-<td>Proxmox GUI / SSH</td>
-<td>10.10.0.0/24</td>
+<td><code>401 Unauthorized</code> when installing Ceph</td>
+<td>Use the no-subscription repo:<br><code>echo 'deb http://download.proxmox.com/debian/ceph-quincy bookworm no-subscription' &gt; /etc/apt/sources.list.d/ceph.list</code></td>
 </tr>
 <tr>
-<td><strong>20</strong></td>
-<td>services</td>
-<td>Guest VM/LXC networks</td>
-<td>10.20.0.0/24</td>
+<td><code>device is already in use</code> during OSD create</td>
+<td>Run:<br><code>ceph-volume lvm list</code><br>Then remove with:<br><code>sgdisk --zap-all /dev/sdX &amp;&amp; wipefs -a /dev/sdX</code></td>
 </tr>
 <tr>
-<td><strong>30</strong></td>
-<td>cluster</td>
-<td>Corosync &amp; Ceph replication</td>
-<td>10.30.0.0/24</td>
+<td><code>too many PGs per OSD</code> warning</td>
+<td>Reduce PGs or use:<br><code>ceph config set global mon_max_pg_per_osd 500</code></td>
 </tr>
 <tr>
-<td><strong>40</strong></td>
-<td>backups</td>
-<td>Backup traffic</td>
-<td>10.40.0.0/24</td>
+<td>CephFS mount fails at boot</td>
+<td>Clean entry from <code>storage.cfg</code> or:<br><code>systemctl mask mnt-pve-ceph-fs.mount</code></td>
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>Ensure your physical switches trunk all required VLANs to the Proxmox hosts.  Untagged (native) VLAN 10 is used for management in this example.</li>
-<li>Identify the network interface name connected to your switch (e.g. <code>eno1</code> or <code>eth0</code>).  You can list interfaces with <code>ip link</code>.</li>
-<li>Decide which VLANs will carry Ceph and cluster traffic; high‑throughput networks benefit from jumbo frames (MTU 9000).</li>
-</ul>
-<h2 id="step-1-create-a-vlanaware-bridge">Step 1 – Create a VLAN‑aware Bridge</h2>
-<p>Edit <code>/etc/network/interfaces</code> on each node and create a Linux bridge named <code>vmbr0</code> that attaches to your physical NIC.  Enable VLAN‑aware mode so that sub‑interfaces can be defined on top:</p>
-<div class="codehilite"><pre><span></span><code>auto<span class="w"> </span>lo
-iface<span class="w"> </span>lo<span class="w"> </span>inet<span class="w"> </span>loopback
-
-auto<span class="w"> </span>eno1
-iface<span class="w"> </span>eno1<span class="w"> </span>inet<span class="w"> </span>manual
-
-auto<span class="w"> </span>vmbr0
-iface<span class="w"> </span>vmbr0<span class="w"> </span>inet<span class="w"> </span>manual
-<span class="w">        </span>bridge‑ports<span class="w"> </span>eno1
-<span class="w">        </span>bridge‑stp<span class="w"> </span>off
-<span class="w">        </span>bridge‑fd<span class="w"> </span><span class="m">0</span>
-<span class="w">        </span>bridge‑vlan‑aware<span class="w"> </span>yes
-<span class="w">        </span>bridge‑vids<span class="w"> </span><span class="m">2</span>‑4094
+<p>Always finish with:</p>
+<div class="codehilite"><pre><span></span><code>ceph<span class="w"> </span>-s
 </code></pre></div>
 
-<p>This defines a bare bridge without any IP address.  The <code>bridge‑vlan‑aware</code> flag allows us to tag VLANs on the bridge directly.  After saving, restart the networking service or reboot to apply changes.</p>
-<p><img alt="Network interfaces page showing the physical NIC and bridge" src="../../assets/screenshots/proxmox-ve1-network-interfaces.png" /></p>
-<p><img alt="Bridge configuration with VLAN awareness enabled" src="../../assets/screenshots/proxmox-ve1-network-vmbr0.png" /></p>
-<h2 id="step-2-define-vlan-subinterfaces">Step 2 – Define VLAN Subinterfaces</h2>
-<p>For each VLAN, create a logical interface on <code>vmbr0</code> with a <code>.VLAN_ID</code> suffix and assign an IP address if needed.  Below is an example for the management network.  Repeat the stanza for other VLANs, changing the VLAN ID and IP accordingly:</p>
-<div class="codehilite"><pre><span></span><code>auto<span class="w"> </span>vmbr0.10
-iface<span class="w"> </span>vmbr0.10<span class="w"> </span>inet<span class="w"> </span>static
-<span class="w">        </span>address<span class="w"> </span><span class="m">10</span>.10.0.11/24
-<span class="w">        </span>gateway<span class="w"> </span><span class="m">10</span>.10.0.1
-<span class="w">        </span>dns‑servers<span class="w"> </span><span class="m">10</span>.0.0.102<span class="w"> </span><span class="m">1</span>.1.1.1
-<span class="w">        </span>vlan‑raw‑device<span class="w"> </span>vmbr0
-</code></pre></div>
-
-<p>Replace <code>10.10.0.11</code> with the correct IP for each node.  For VLANs used exclusively for Ceph or cluster traffic, omit the <code>gateway</code> line since they are non‑routed subnets.</p>
-<p>Below is a screenshot of the VLAN‑tagged interface configuration in the Proxmox GUI:</p>
-<p><img alt="VLAN tagged interface configuration" src="../../assets/screenshots/proxmox-network-vlan-tags.png" /></p>
-<h3 id="gui-configuration">GUI configuration</h3>
-<p>If you prefer the web interface, navigate to <strong>Datacenter → Node → Network</strong> and click <strong>Create → Linux Bridge</strong>.  Enter <code>vmbr0</code> as the name, select your NIC (e.g. <code>eno1</code>) and tick <strong>VLAN aware</strong>.  Next, create VLANs by clicking <strong>Add → Linux VLAN</strong>, choose the bridge, and enter the VLAN ID and IP settings.</p>
-<table>
-<thead>
-<tr>
-<th>Menu path</th>
-<th>Action</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Datacenter → Node → Network → Create Bridge</td>
-<td>Create <code>vmbr0</code> with VLAN awareness</td>
-<td>Base bridge for all tagged networks</td>
-</tr>
-<tr>
-<td>Datacenter → Node → Network → Add VLAN</td>
-<td>Add <code>vmbr0.10</code>, <code>vmbr0.20</code>, etc.</td>
-<td>Define per‑VLAN interfaces and IP addresses</td>
-</tr>
-<tr>
-<td>Datacenter → Node → Network → Reboot required</td>
-<td>Apply changes</td>
-<td>Restart services to apply network changes</td>
-</tr>
-</tbody>
-</table>
-<h2 id="step-3-validate-connectivity">Step 3 – Validate Connectivity</h2>
-<p>After applying the configuration, verify network connectivity:</p>
-<div class="codehilite"><pre><span></span><code>ip<span class="w"> </span>addr<span class="w"> </span>show<span class="w"> </span>vmbr0
-ip<span class="w"> </span>addr<span class="w"> </span>show<span class="w"> </span>vmbr0.10
-ping<span class="w"> </span>-c3<span class="w"> </span><span class="m">10</span>.10.0.12
-ping<span class="w"> </span>-c3<span class="w"> </span><span class="m">10</span>.30.0.3
-</code></pre></div>
-
-<p>All nodes should be reachable on the management and cluster VLANs.  Use <code>ip link</code> to check the MTU; set it to 9000 on both the host NIC and switch if jumbo frames are desired.</p>
-<p><img alt="Ping test verifying connectivity on VLANs" src="../../assets/screenshots/proxmox-network-vlan-ping.png" /></p>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<ul>
-<li>If <code>bridge‑vlan‑aware</code> is not enabled, tagged interfaces (<code>vmbr0.10</code>) will not forward traffic.  Recheck the configuration and restart networking.</li>
-<li>Ensure the trunk ports on the switch allow all required VLANs and that native VLANs are correctly set.</li>
-<li>For Ceph and Corosync, avoid mixing MTU sizes on different paths.  Use <code>ip link set dev &lt;iface&gt; mtu &lt;value&gt;</code> to adjust.</li>
-</ul>
-<h2 id="next-steps-links">Next steps / Links</h2>
-<p>With networking configured, proceed to the <a href="../cluster/">Cluster Setup</a> page to form a three‑node Proxmox cluster.  For Ceph storage configuration, see the <a href="../ceph/">Ceph Storage guide</a>.</p>
+<p>Target: <strong>HEALTH_OK</strong></p>
 
 
 

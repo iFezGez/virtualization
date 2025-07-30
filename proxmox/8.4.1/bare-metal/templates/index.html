@@ -9,22 +9,18 @@
       
       
       
-        <link rel="prev" href="../network/">
       
       
-        <link rel="next" href="../ceph/">
-      
-      
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Cluster - Proxmox VE 8.4.1 docs</title>
+        <title>Creating Cloud-Init VM Templates in Proxmox - Proxmox VE 8.4.1 docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -43,7 +39,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#proxmox-ve-841-cluster-setup" class="md-skip">
+        <a href="#creating-cloud-init-vm-templates-in-proxmox" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +74,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="Proxmox VE 8.4.1 docs" class="md-header__button md-logo" aria-label="Proxmox VE 8.4.1 docs" data-md-component="logo">
+    <a href="../../../.." title="Proxmox VE 8.4.1 docs" class="md-header__button md-logo" aria-label="Proxmox VE 8.4.1 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cluster
+              Creating Cloud-Init VM Templates in Proxmox
             
           </span>
         </div>
@@ -188,7 +184,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="Proxmox VE 8.4.1 docs" class="md-nav__button md-logo" aria-label="Proxmox VE 8.4.1 docs" data-md-component="logo">
+    <a href="../../../.." title="Proxmox VE 8.4.1 docs" class="md-nav__button md-logo" aria-label="Proxmox VE 8.4.1 docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -218,7 +214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -237,20 +233,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -266,7 +260,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Proxmox VE 8.4.1 (bare-metal)
@@ -280,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../docs/installation/" class="md-nav__link">
         
   
   
@@ -303,7 +297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/" class="md-nav__link">
+      <a href="../docs/network/" class="md-nav__link">
         
   
   
@@ -323,32 +317,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Cluster
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../docs/cluster/" class="md-nav__link">
         
   
   
@@ -359,107 +331,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quickview-topology-matrix" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick‑view topology / matrix
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-initialize-the-cluster-on-the-first-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1 – Initialize the Cluster on the First Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-join-additional-nodes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2 – Join Additional Nodes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-regenerate-certificates-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3 – Regenerate Certificates (Optional)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-validate-cluster-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4 – Validate Cluster Status
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#validation-smoke-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Validation &amp; Smoke Tests
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next steps / Links
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -472,7 +343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ceph/" class="md-nav__link">
+      <a href="../docs/ceph/" class="md-nav__link">
         
   
   
@@ -495,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ha/" class="md-nav__link">
+      <a href="../docs/ha/" class="md-nav__link">
         
   
   
@@ -545,81 +416,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quickview-topology-matrix" class="md-nav__link">
+  <a href="#steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick‑view topology / matrix
+      Steps
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#script" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Script
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-initialize-the-cluster-on-the-first-node" class="md-nav__link">
+  <a href="#output" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1 – Initialize the Cluster on the First Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-join-additional-nodes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2 – Join Additional Nodes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-regenerate-certificates-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3 – Regenerate Certificates (Optional)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-validate-cluster-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4 – Validate Cluster Status
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#validation-smoke-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Validation &amp; Smoke Tests
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next steps / Links
+      Output
     </span>
   </a>
   
@@ -644,88 +461,40 @@
   
 
 
-<h1 id="proxmox-ve-841-cluster-setup">Proxmox VE 8.4.1 – Cluster Setup</h1>
-<p>This guide explains how to create and join a Proxmox cluster.  A three‑node cluster ensures quorum and high availability for guest workloads.</p>
-<h2 id="quickview-topology-matrix">Quick‑view topology / matrix</h2>
-<table>
-<thead>
-<tr>
-<th>Node</th>
-<th>Management IP</th>
-<th>Cluster IP (VLAN 30)</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>ve1</strong></td>
-<td>10.10.0.11</td>
-<td>10.30.0.2</td>
-<td>Primary node; will create the cluster</td>
-</tr>
-<tr>
-<td><strong>ve2</strong></td>
-<td>10.10.0.12</td>
-<td>10.30.0.3</td>
-<td>Joins cluster as node ID 2</td>
-</tr>
-<tr>
-<td><strong>ve3</strong></td>
-<td>10.10.0.13</td>
-<td>10.30.0.4</td>
-<td>Joins cluster as node ID 3</td>
-</tr>
-</tbody>
-</table>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>All nodes have been installed with Proxmox VE 8.4.1 and networking configured as described in the <a href="../network/">Networking guide</a>.</li>
-<li><code>/etc/hosts</code> lists all node names and addresses.</li>
-<li>Time synchronization (<code>timedatectl</code>) is enabled on every node.</li>
-</ul>
-<h2 id="step-1-initialize-the-cluster-on-the-first-node">Step 1 – Initialize the Cluster on the First Node</h2>
-<p>Log into <strong>ve1</strong> and run the following command to create a new cluster named <code>vesta‑lab</code>.  The <code>--link0</code> argument specifies the management interface for Corosync communication.</p>
-<div class="codehilite"><pre><span></span><code>pvecm<span class="w"> </span>create<span class="w"> </span>vesta-lab<span class="w"> </span>--link0<span class="w"> </span><span class="nv">address</span><span class="o">=</span><span class="m">10</span>.10.0.11,priority<span class="o">=</span><span class="m">1</span>
+<h1 id="creating-cloud-init-vm-templates-in-proxmox">Creating Cloud-Init VM Templates in Proxmox</h1>
+<p>This guide explains how to create a reusable Debian 12 template with cloud-init support in Proxmox.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Download the Debian 12 generic cloud image (QCOW2).</li>
+<li>Create a new VM with ID 9000 and attach the downloaded disk.</li>
+<li>Configure boot settings and add a cloud-init drive.</li>
+<li>Mark the VM as a template.</li>
+</ol>
+<h2 id="script">Script</h2>
+<p>The <code>create_debian12_template.sh</code> script automates this process:</p>
+<div class="codehilite"><pre><span></span><code>./scripts/create_debian12_template.sh
 </code></pre></div>
 
-<p>You should see output indicating that the new cluster configuration has been written.  The <code>pvecm</code> tool will start Corosync and the pve‑cluster service on the first node.</p>
-<h2 id="step-2-join-additional-nodes">Step 2 – Join Additional Nodes</h2>
-<p>On <strong>ve2</strong> and <strong>ve3</strong>, join the cluster by specifying the IP address of the first node and a unique node ID.  Replace <code>&lt;nodeid&gt;</code> with <code>2</code> on ve2 and <code>3</code> on ve3:</p>
-<div class="codehilite"><pre><span></span><code>pvecm<span class="w"> </span>add<span class="w"> </span><span class="m">10</span>.10.0.11<span class="w"> </span>--nodeid<span class="w"> </span>&lt;nodeid&gt;
+<p>Ensure the script has executable permissions and is run from the <code>proxmox/</code> directory.</p>
+<h2 id="output">Output</h2>
+<p>Once executed, you’ll have a reusable cloud-init template with VM ID 9000 stored in your local Proxmox node.</p>
+<h1 id="creating-cloud-init-vm-templates-in-proxmox_1">Creating Cloud-Init VM Templates in Proxmox</h1>
+<p>This guide explains how to create a reusable Debian 12 template with cloud-init support in Proxmox.</p>
+<h2 id="steps_1">Steps</h2>
+<ol>
+<li>Download the Debian 12 generic cloud image (QCOW2).</li>
+<li>Create a new VM with ID 9000 and attach the downloaded disk.</li>
+<li>Configure boot settings and add a cloud-init drive.</li>
+<li>Mark the VM as a template.</li>
+</ol>
+<h2 id="script_1">Script</h2>
+<p>The <code>create_debian12_template.sh</code> script automates this process:</p>
+<div class="codehilite"><pre><span></span><code>./scripts/create_debian12_template.sh
 </code></pre></div>
 
-<p>If you previously initialized a local cluster on ve2 or ve3 by mistake, reset it before joining:</p>
-<div class="codehilite"><pre><span></span><code>systemctl<span class="w"> </span>stop<span class="w"> </span>corosync<span class="w"> </span>pve-cluster
-rm<span class="w"> </span>-rf<span class="w"> </span>/etc/corosync/*<span class="w"> </span>/var/lib/pve-cluster/*
-systemctl<span class="w"> </span>start<span class="w"> </span>pve-cluster
-</code></pre></div>
-
-<p>After joining, <code>pvecm nodes</code> will list all members with their assigned IDs and votes.</p>
-<p><img alt="Cluster membership list in the Proxmox GUI" src="../../assets/screenshots/proxmox-cluster-nodes.png" /></p>
-<h2 id="step-3-regenerate-certificates-optional">Step 3 – Regenerate Certificates (Optional)</h2>
-<p>To ensure that all nodes have synchronized SSL certificates, run the following commands on <strong>ve1</strong> after all members have joined:</p>
-<div class="codehilite"><pre><span></span><code>pvecm<span class="w"> </span>updatecerts<span class="w"> </span>--force
-systemctl<span class="w"> </span>restart<span class="w"> </span>pveproxy<span class="w"> </span>pvedaemon
-</code></pre></div>
-
-<p>This forces a certificate refresh and restarts the web proxy and API daemons.</p>
-<h2 id="step-4-validate-cluster-status">Step 4 – Validate Cluster Status</h2>
-<p>Run <code>pvecm status</code> on any node to verify cluster health:</p>
-<div class="codehilite"><pre><span></span><code>pvecm<span class="w"> </span>status
-</code></pre></div>
-
-<p>The output should show <code>Quorate: Yes</code> and list all three nodes.  If quorum is not established, double‑check time synchronization, firewall rules and the cluster network.</p>
-<p><img alt="Cluster status showing quorum established" src="../../assets/screenshots/proxmox-cluster-status.png" /></p>
-<h2 id="validation-smoke-tests">Validation &amp; Smoke Tests</h2>
-<ul>
-<li><strong>Node visibility</strong> – Each node appears in the web GUI under <strong>Datacenter → Cluster</strong> with status <em>Online</em>.</li>
-<li><strong>Quorum</strong> – <code>pvecm status</code> reports <code>Quorate: Yes</code> and <code>Nodes: 3</code>.</li>
-<li><strong>Migration</strong> – Create a test VM and migrate it between nodes via <strong>VM → Migration</strong> to confirm cluster operation.</li>
-</ul>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<p>Common cluster issues (nodes stuck in old clusters, Corosync errors, certificate mismatches) are documented in the <a href="../troubleshooting_cluster/">Cluster Troubleshooting</a> page.</p>
-<h2 id="next-steps-links">Next steps / Links</h2>
-<p>With the cluster operational, continue with the <a href="../ceph/">Ceph Storage</a> guide to configure shared storage across the nodes, or enable automatic failover via <a href="../ha/">High Availability</a>.</p>
+<p>Ensure the script has executable permissions and is run from the <code>proxmox/</code> directory.</p>
+<h2 id="output_1">Output</h2>
+<p>Once executed, you’ll have a reusable cloud-init template with VM ID 9000 stored in your local Proxmox node.</p>
 
 
 
@@ -774,10 +543,10 @@ systemctl<span class="w"> </span>restart<span class="w"> </span>pveproxy<span cl
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../../..", "features": [], "search": "../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

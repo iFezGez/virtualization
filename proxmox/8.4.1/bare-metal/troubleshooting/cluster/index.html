@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../installation/">
-      
-      
-        <link rel="next" href="../cluster/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Networking - Proxmox VE 8.4.1 docs</title>
+        <title>Cluster Troubleshooting - Proxmox VE 8.4.1 docs</title>
       
     
     
@@ -62,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#proxmox-ve-841-networking-baremetal" class="md-skip">
+        <a href="#cluster-troubleshooting" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Networking
+              Cluster Troubleshooting
             
           </span>
         </div>
@@ -237,20 +233,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -266,7 +260,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Proxmox VE 8.4.1 (bare-metal)
@@ -280,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../docs/installation/" class="md-nav__link">
         
   
   
@@ -300,32 +294,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Networking
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../docs/network/" class="md-nav__link">
         
   
   
@@ -336,104 +308,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quickview-topology-matrix" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick‑view topology / matrix
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-create-a-vlanaware-bridge" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1 – Create a VLAN‑aware Bridge
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-define-vlan-subinterfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2 – Define VLAN Subinterfaces
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 2 – Define VLAN Subinterfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gui-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      GUI configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-validate-connectivity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3 – Validate Connectivity
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next steps / Links
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -446,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cluster/" class="md-nav__link">
+      <a href="../../docs/cluster/" class="md-nav__link">
         
   
   
@@ -469,7 +343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ceph/" class="md-nav__link">
+      <a href="../../docs/ceph/" class="md-nav__link">
         
   
   
@@ -492,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ha/" class="md-nav__link">
+      <a href="../../docs/ha/" class="md-nav__link">
         
   
   
@@ -542,78 +416,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quickview-topology-matrix" class="md-nav__link">
+  <a href="#issue-node-already-part-of-a-cluster" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick‑view topology / matrix
+      Issue: Node Already Part of a Cluster
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#issue-corosync-token-has-not-been-received-errors" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Issue: Corosync “Token has not been received” Errors
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-create-a-vlanaware-bridge" class="md-nav__link">
+  <a href="#issue-host-key-verification-failed-when-opening-console" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1 – Create a VLAN‑aware Bridge
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-define-vlan-subinterfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2 – Define VLAN Subinterfaces
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 2 – Define VLAN Subinterfaces">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gui-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      GUI configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-validate-connectivity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3 – Validate Connectivity
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next steps / Links
+      Issue: Host Key Verification Failed When Opening Console
     </span>
   </a>
   
@@ -638,130 +461,39 @@
   
 
 
-<h1 id="proxmox-ve-841-networking-baremetal">Proxmox VE 8.4.1 – Networking (Bare‑Metal)</h1>
-<p>This page describes how to configure bridges and VLAN tagging on each Proxmox host.  A consistent network layout is critical for cluster communication and Ceph traffic.</p>
-<h2 id="quickview-topology-matrix">Quick‑view topology / matrix</h2>
-<table>
-<thead>
-<tr>
-<th>VLAN ID</th>
-<th>Name</th>
-<th>Purpose</th>
-<th>CIDR</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>10</strong></td>
-<td>mgmt</td>
-<td>Proxmox GUI / SSH</td>
-<td>10.10.0.0/24</td>
-</tr>
-<tr>
-<td><strong>20</strong></td>
-<td>services</td>
-<td>Guest VM/LXC networks</td>
-<td>10.20.0.0/24</td>
-</tr>
-<tr>
-<td><strong>30</strong></td>
-<td>cluster</td>
-<td>Corosync &amp; Ceph replication</td>
-<td>10.30.0.0/24</td>
-</tr>
-<tr>
-<td><strong>40</strong></td>
-<td>backups</td>
-<td>Backup traffic</td>
-<td>10.40.0.0/24</td>
-</tr>
-</tbody>
-</table>
-<h2 id="prerequisites">Prerequisites</h2>
+<h1 id="cluster-troubleshooting">Cluster Troubleshooting</h1>
+<hr />
+<h2 id="issue-node-already-part-of-a-cluster">Issue: Node Already Part of a Cluster</h2>
+<p>If a node was previously part of another cluster or initialized incorrectly, reset it:</p>
+<div class="codehilite"><pre><span></span><code>systemctl<span class="w"> </span>stop<span class="w"> </span>corosync<span class="w"> </span>pve-cluster
+rm<span class="w"> </span>-rf<span class="w"> </span>/etc/corosync/*<span class="w"> </span>/var/lib/pve-cluster/*
+systemctl<span class="w"> </span>start<span class="w"> </span>pve-cluster
+pvecm<span class="w"> </span>add<span class="w"> </span><span class="m">10</span>.10.0.11
+</code></pre></div>
+
+<hr />
+<h2 id="issue-corosync-token-has-not-been-received-errors">Issue: Corosync “Token has not been received” Errors</h2>
 <ul>
-<li>Ensure your physical switches trunk all required VLANs to the Proxmox hosts.  Untagged (native) VLAN 10 is used for management in this example.</li>
-<li>Identify the network interface name connected to your switch (e.g. <code>eno1</code> or <code>eth0</code>).  You can list interfaces with <code>ip link</code>.</li>
-<li>Decide which VLANs will carry Ceph and cluster traffic; high‑throughput networks benefit from jumbo frames (MTU 9000).</li>
+<li>Verify VLAN 30 (cluster network) is reachable from all nodes:</li>
 </ul>
-<h2 id="step-1-create-a-vlanaware-bridge">Step 1 – Create a VLAN‑aware Bridge</h2>
-<p>Edit <code>/etc/network/interfaces</code> on each node and create a Linux bridge named <code>vmbr0</code> that attaches to your physical NIC.  Enable VLAN‑aware mode so that sub‑interfaces can be defined on top:</p>
-<div class="codehilite"><pre><span></span><code>auto<span class="w"> </span>lo
-iface<span class="w"> </span>lo<span class="w"> </span>inet<span class="w"> </span>loopback
-
-auto<span class="w"> </span>eno1
-iface<span class="w"> </span>eno1<span class="w"> </span>inet<span class="w"> </span>manual
-
-auto<span class="w"> </span>vmbr0
-iface<span class="w"> </span>vmbr0<span class="w"> </span>inet<span class="w"> </span>manual
-<span class="w">        </span>bridge‑ports<span class="w"> </span>eno1
-<span class="w">        </span>bridge‑stp<span class="w"> </span>off
-<span class="w">        </span>bridge‑fd<span class="w"> </span><span class="m">0</span>
-<span class="w">        </span>bridge‑vlan‑aware<span class="w"> </span>yes
-<span class="w">        </span>bridge‑vids<span class="w"> </span><span class="m">2</span>‑4094
+<div class="codehilite"><pre><span></span><code>ping<span class="w"> </span><span class="m">10</span>.30.0.x
 </code></pre></div>
 
-<p>This defines a bare bridge without any IP address.  The <code>bridge‑vlan‑aware</code> flag allows us to tag VLANs on the bridge directly.  After saving, restart the networking service or reboot to apply changes.</p>
-<p><img alt="Network interfaces page showing the physical NIC and bridge" src="../../assets/screenshots/proxmox-ve1-network-interfaces.png" /></p>
-<p><img alt="Bridge configuration with VLAN awareness enabled" src="../../assets/screenshots/proxmox-ve1-network-vmbr0.png" /></p>
-<h2 id="step-2-define-vlan-subinterfaces">Step 2 – Define VLAN Subinterfaces</h2>
-<p>For each VLAN, create a logical interface on <code>vmbr0</code> with a <code>.VLAN_ID</code> suffix and assign an IP address if needed.  Below is an example for the management network.  Repeat the stanza for other VLANs, changing the VLAN ID and IP accordingly:</p>
-<div class="codehilite"><pre><span></span><code>auto<span class="w"> </span>vmbr0.10
-iface<span class="w"> </span>vmbr0.10<span class="w"> </span>inet<span class="w"> </span>static
-<span class="w">        </span>address<span class="w"> </span><span class="m">10</span>.10.0.11/24
-<span class="w">        </span>gateway<span class="w"> </span><span class="m">10</span>.10.0.1
-<span class="w">        </span>dns‑servers<span class="w"> </span><span class="m">10</span>.0.0.102<span class="w"> </span><span class="m">1</span>.1.1.1
-<span class="w">        </span>vlan‑raw‑device<span class="w"> </span>vmbr0
-</code></pre></div>
-
-<p>Replace <code>10.10.0.11</code> with the correct IP for each node.  For VLANs used exclusively for Ceph or cluster traffic, omit the <code>gateway</code> line since they are non‑routed subnets.</p>
-<p>Below is a screenshot of the VLAN‑tagged interface configuration in the Proxmox GUI:</p>
-<p><img alt="VLAN tagged interface configuration" src="../../assets/screenshots/proxmox-network-vlan-tags.png" /></p>
-<h3 id="gui-configuration">GUI configuration</h3>
-<p>If you prefer the web interface, navigate to <strong>Datacenter → Node → Network</strong> and click <strong>Create → Linux Bridge</strong>.  Enter <code>vmbr0</code> as the name, select your NIC (e.g. <code>eno1</code>) and tick <strong>VLAN aware</strong>.  Next, create VLANs by clicking <strong>Add → Linux VLAN</strong>, choose the bridge, and enter the VLAN ID and IP settings.</p>
-<table>
-<thead>
-<tr>
-<th>Menu path</th>
-<th>Action</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Datacenter → Node → Network → Create Bridge</td>
-<td>Create <code>vmbr0</code> with VLAN awareness</td>
-<td>Base bridge for all tagged networks</td>
-</tr>
-<tr>
-<td>Datacenter → Node → Network → Add VLAN</td>
-<td>Add <code>vmbr0.10</code>, <code>vmbr0.20</code>, etc.</td>
-<td>Define per‑VLAN interfaces and IP addresses</td>
-</tr>
-<tr>
-<td>Datacenter → Node → Network → Reboot required</td>
-<td>Apply changes</td>
-<td>Restart services to apply network changes</td>
-</tr>
-</tbody>
-</table>
-<h2 id="step-3-validate-connectivity">Step 3 – Validate Connectivity</h2>
-<p>After applying the configuration, verify network connectivity:</p>
-<div class="codehilite"><pre><span></span><code>ip<span class="w"> </span>addr<span class="w"> </span>show<span class="w"> </span>vmbr0
-ip<span class="w"> </span>addr<span class="w"> </span>show<span class="w"> </span>vmbr0.10
-ping<span class="w"> </span>-c3<span class="w"> </span><span class="m">10</span>.10.0.12
-ping<span class="w"> </span>-c3<span class="w"> </span><span class="m">10</span>.30.0.3
-</code></pre></div>
-
-<p>All nodes should be reachable on the management and cluster VLANs.  Use <code>ip link</code> to check the MTU; set it to 9000 on both the host NIC and switch if jumbo frames are desired.</p>
-<p><img alt="Ping test verifying connectivity on VLANs" src="../../assets/screenshots/proxmox-network-vlan-ping.png" /></p>
-<h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
-<li>If <code>bridge‑vlan‑aware</code> is not enabled, tagged interfaces (<code>vmbr0.10</code>) will not forward traffic.  Recheck the configuration and restart networking.</li>
-<li>Ensure the trunk ports on the switch allow all required VLANs and that native VLANs are correctly set.</li>
-<li>For Ceph and Corosync, avoid mixing MTU sizes on different paths.  Use <code>ip link set dev &lt;iface&gt; mtu &lt;value&gt;</code> to adjust.</li>
+<li>Ensure the MTU is consistent across interfaces (e.g., all at <code>1500</code> or <code>9000</code>):</li>
 </ul>
-<h2 id="next-steps-links">Next steps / Links</h2>
-<p>With networking configured, proceed to the <a href="../cluster/">Cluster Setup</a> page to form a three‑node Proxmox cluster.  For Ceph storage configuration, see the <a href="../ceph/">Ceph Storage guide</a>.</p>
+<div class="codehilite"><pre><span></span><code>ip<span class="w"> </span>link<span class="w"> </span><span class="nb">set</span><span class="w"> </span>dev<span class="w"> </span>&lt;interface&gt;<span class="w"> </span>mtu<span class="w"> </span><span class="m">1500</span>
+</code></pre></div>
+
+<p>Replace <code>&lt;interface&gt;</code> with the correct NIC (e.g., <code>vmbr1</code> or <code>eth1</code>).</p>
+<hr />
+<h2 id="issue-host-key-verification-failed-when-opening-console">Issue: Host Key Verification Failed When Opening Console</h2>
+<p>This happens if certificates are mismatched. Run the following on each node:</p>
+<div class="codehilite"><pre><span></span><code>pvecm<span class="w"> </span>updatecerts<span class="w"> </span>--force
+systemctl<span class="w"> </span>restart<span class="w"> </span>pveproxy<span class="w"> </span>pvedaemon
+</code></pre></div>
+
+<p>This regenerates and synchronizes the cluster certificates.</p>
 
 
 
