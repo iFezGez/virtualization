@@ -16,17 +16,11 @@ This repository provides standardized reference implementations for virtualizati
 The full virtualization lab is published online with MkDocs: 
 - [https://ifezgez.github.io/virtualization/](https://ifezgez.github.io/virtualization/)
 
----
-
----
-
 ## Maintainer
 
 **Ignacio Fernandez**  
 CEO @ Vesta Security LATAM  
 [https://vestasec.com](https://vestasec.com)
-
----
 
 ---
 
