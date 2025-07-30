@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    restart: always
+    environment:
+      - NGINX_HOST=example.local
+      - NGINX_PORT=80
+    labels:
+      - "com.example.description=Test NGINX stack"
+    volumes:
+      - ./html:/usr/share/nginx/html

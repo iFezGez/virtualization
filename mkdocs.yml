@@ -27,4 +27,8 @@ nav:
       - Networking: docker/28.3.3/vm/docs/network.md
       - Features: docker/28.3.3/vm/docs/features.md
 
-
+  - Portainer 2.20.2 (VM):
+      - Installation: portainer/2.20.2/vm/docs/installation.md
+      - Configuration: portainer/2.20.2/vm/docs/configuration.md
+      - Networking: portainer/2.20.2/vm/docs/network.md
+      - Features: portainer/2.20.2/vm/docs/features.md

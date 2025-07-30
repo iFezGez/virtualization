@@ -16,7 +16,7 @@
     
     
       
-        <title>Proxmox VE 8.4.1 Documentation - Virtualization Repository</title>
+        <title>Proxmox VE 8.4.1 on Bare-metal - Virtualization Repository</title>
       
     
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#proxmox-ve-841-documentation" class="md-skip">
+        <a href="#proxmox-ve-841-on-bare-metal" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Proxmox VE 8.4.1 Documentation
+              Proxmox VE 8.4.1 on Bare-metal
             
           </span>
         </div>
@@ -389,6 +389,143 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Docker 28.3.3 (VM)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Docker 28.3.3 (VM)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../docker/28.3.3/vm/docs/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../docker/28.3.3/vm/docs/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../docker/28.3.3/vm/docs/network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Networking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../docker/28.3.3/vm/docs/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -416,9 +553,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quick-links" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick links
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contents
     </span>
   </a>
   
@@ -443,46 +589,16 @@
   
 
 
-<h1 id="proxmox-ve-841-documentation">Proxmox VE 8.4.1 Documentation</h1>
-<p>This folder hosts the step-by-step guides for deploying and operating a <strong>bare-metal three-node Proxmox VE 8.4.1 cluster</strong>.<br />
-Each page follows the Vesta Lab documentation template (Quick-view topology, Prerequisites, Step 1–3, Validation, Troubleshooting).</p>
-<table>
-<thead>
-<tr>
-<th>Page</th>
-<th>What you’ll find</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong><code>installation.md</code></strong></td>
-<td>ISO install, initial networking, subscription keys</td>
-</tr>
-<tr>
-<td><strong><code>network.md</code></strong></td>
-<td>Bridge/VLAN layout, bond creation, validation pings</td>
-</tr>
-<tr>
-<td><strong><code>cluster.md</code></strong></td>
-<td>Joining nodes, quorum checks, fencing hints</td>
-</tr>
-<tr>
-<td><strong><code>ceph.md</code></strong></td>
-<td>OSD prep, pool/CRUSH rules, CephFS storage screenshots</td>
-</tr>
-<tr>
-<td><strong><code>ha.md</code></strong></td>
-<td>Enable HA manager, migrate test VM, fail-over demo</td>
-</tr>
-</tbody>
-</table>
-<h2 id="quick-links">Quick links</h2>
+<h1 id="proxmox-ve-841-on-bare-metal">Proxmox VE 8.4.1 on Bare-metal</h1>
+<h2 id="overview">Overview</h2>
+<p>This section documents the deployment of a three-node Proxmox VE cluster (v8.4.1) on bare-metal servers, including Ceph and HA setup.</p>
+<h2 id="contents">Contents</h2>
 <ul>
-<li><strong>Installation guide</strong> ➜ <a href="installation/"><code>installation.md</code></a>  </li>
-<li><strong>Networking (VLAN &amp; bridges)</strong> ➜ <a href="network/"><code>network.md</code></a>  </li>
-<li><strong>Cluster setup</strong> ➜ <a href="cluster/"><code>cluster.md</code></a>  </li>
-<li><strong>Ceph storage</strong> ➜ <a href="ceph/"><code>ceph.md</code></a>  </li>
-<li><strong>High Availability</strong> ➜ <a href="ha/"><code>ha.md</code></a></li>
+<li><a href="installation/">Installation</a></li>
+<li><a href="network/">Networking</a></li>
+<li><a href="cluster/">Cluster setup</a></li>
+<li><a href="ceph/">Ceph storage</a></li>
+<li><a href="ha/">High Availability</a></li>
 </ul>
 
 

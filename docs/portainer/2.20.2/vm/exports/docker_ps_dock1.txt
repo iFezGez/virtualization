@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE                           COMMAND        CREATED          STATUS          PORTS                                                                                                NAMES
+06b5ce38f2be   portainer/portainer-ce:2.20.2   "/portainer"   31 minutes ago   Up 31 minutes   0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp, 8000/tcp, 0.0.0.0:9443->9443/tcp, [::]:9443->9443/tcp   portainer
