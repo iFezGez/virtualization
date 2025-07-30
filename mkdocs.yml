@@ -1,7 +1,11 @@
 site_name: "Proxmox VE 8.4.1 docs"
 repo_url:  "https://github.com/ifezgez/virtualization"
 
+<<<<<<< HEAD
 docs_dir: docs        # explícito para coherencia
+=======
+docs_dir: docs
+>>>>>>> feature/restructure
 theme:
   name: material
 
