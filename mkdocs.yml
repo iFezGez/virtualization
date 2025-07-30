@@ -1,11 +1,8 @@
 site_name: "Proxmox VE 8.4.1 docs"
 repo_url:  "https://github.com/ifezgez/virtualization"
 
-<<<<<<< HEAD
-docs_dir: docs        # explícito para coherencia
-=======
 docs_dir: docs
->>>>>>> feature/restructure
+
 theme:
   name: material
 
@@ -23,3 +20,4 @@ nav:
       - Cluster:      proxmox/8.4.1/bare-metal/docs/cluster.md
       - Ceph Storage: proxmox/8.4.1/bare-metal/docs/ceph.md
       - High Availability: proxmox/8.4.1/bare-metal/docs/ha.md
+
